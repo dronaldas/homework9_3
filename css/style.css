@@ -7,7 +7,7 @@ body {
     width: 500px;
     margin: 0 auto;
     margin-bottom: 30px;
-    transition: 150ms ease-in-out;
+    transition: 200ms ease-in-out;
 }
 .text {
     width: 350px;
@@ -79,14 +79,45 @@ flex-direction: row-reverse;
     font-family: calibri;
     font-size: 20px;
 }
-.image:before {
-    content: "nesigauna";
-    color: white;
-    background-color: teal;
+.profile_image_question:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0,0,0,0.4);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/aa/Camera_Icon.jpg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
     border-radius: 50%;
-    /* background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/aa/Camera_Icon.jpg'); */
-    width: 100px;
-    height: 100px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.profile_image_question:hover:before {
+       opacity: 1;
+}
+.profile_image_answer:before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 70px;
+    height: 70px;
+    background-color: rgba(0,0,0,0.4);
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/aa/Camera_Icon.jpg');
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.profile_image_answer:hover:before {
+       opacity: 1;
 }
 
 /* <img src="">
