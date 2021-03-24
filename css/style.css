@@ -18,6 +18,9 @@ body {
 }
 .profile_image_question {
     margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    left: -80px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -27,6 +30,9 @@ body {
 }
 .profile_image_answer {
     margin-top: 20px;
+    position: absolute;
+    bottom: 10px;
+    right: -80px;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -54,8 +60,8 @@ flex-direction: row-reverse;
     border-left: 15px solid rgba(128, 128, 128, 0);
     position: absolute;
     transform: rotateZ(90deg);
-    left: 68px;
-    top: 40px;
+    left: 0px;
+    bottom: 20px;
 }
 .answer:before {
     content: "";
@@ -65,8 +71,8 @@ flex-direction: row-reverse;
     border-left: 15px solid rgba(128, 128, 128, 0);
     position: absolute;
     transform: rotateZ(-90deg);
-    right: 68px;
-    top: 40px;
+    right: 0px;
+    bottom: 20px;
 }
 
 .question:hover {
@@ -82,7 +88,7 @@ flex-direction: row-reverse;
 .profile_image_question:before {
     content: '';
     position: absolute;
-    top: 20px;
+    top: 0px;
     left: 0;
     width: 70px;
     height: 70px;
@@ -102,7 +108,7 @@ flex-direction: row-reverse;
 .profile_image_answer:before {
     content: '';
     position: absolute;
-    top: 20px;
+    top: 0px;
     right: 0;
     width: 70px;
     height: 70px;
